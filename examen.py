@@ -8,22 +8,26 @@
 problema = int(input("Número del problema (1-10): "))
 
 if problema == 1:
-    # Problema 1: Área de un círculo con radio 15.
-    # Fórmula: Area = 3.1416 * r^2
-    r = 15
-    # Tu código aquí
+    # Problema 1
+    radio = 15
+    pi = 3.1416
+    area = pi * (radio ** 2)
+    print("El area del circulo es:", area)
 
 elif problema == 2:
-    # Problema 2: Genera una clave de producto (concatenar) con código y lote.
-    # Resultado esperado: "prod-88-loteb" (todo en minúsculas).
+    # Problema 2
     codigo = 88
     lote = "LoteB"
-    # Tu código aquí
+    clave_producto = f"prod-{codigo}-{lote.lower()}"
+    print(clave_producto)
 
 elif problema == 3:
-    # Problema 3: Verifica si el carácter '@' está en el correo dado.
+    # Problema 3
     email = "usuario.upa.edu.mx"
-    # Tu código aquí
+    if "@" in email:
+        print("El correo contiene @")
+    else:
+        print("El correo no contiene @")
 
 elif problema == 4:
     # Problema 4: Convierte todo el texto a MAYÚSCULAS.
